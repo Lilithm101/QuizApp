@@ -28,43 +28,118 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listBox1 = new ListBox();
-            button1 = new Button();
+            rbAns2 = new RadioButton();
+            rbAns1 = new RadioButton();
+            rbAns3 = new RadioButton();
+            lbl1 = new Label();
+            rbAns4 = new RadioButton();
+            groupBox1 = new GroupBox();
+            NxtBtn = new Button();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
-            // listBox1
+            // rbAns2
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(32, 32);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(706, 304);
-            listBox1.TabIndex = 0;
+            rbAns2.AutoSize = true;
+            rbAns2.Location = new Point(23, 58);
+            rbAns2.Name = "rbAns2";
+            rbAns2.Size = new Size(94, 19);
+            rbAns2.TabIndex = 0;
+            rbAns2.TabStop = true;
+            rbAns2.Text = "radioButton1";
+            rbAns2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // rbAns1
             // 
-            button1.Location = new Point(626, 378);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 1;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            rbAns1.AutoSize = true;
+            rbAns1.Location = new Point(23, 33);
+            rbAns1.Name = "rbAns1";
+            rbAns1.Size = new Size(94, 19);
+            rbAns1.TabIndex = 1;
+            rbAns1.TabStop = true;
+            rbAns1.Text = "radioButton2";
+            rbAns1.UseVisualStyleBackColor = true;
+            // 
+            // rbAns3
+            // 
+            rbAns3.AutoSize = true;
+            rbAns3.Location = new Point(23, 83);
+            rbAns3.Name = "rbAns3";
+            rbAns3.Size = new Size(94, 19);
+            rbAns3.TabIndex = 2;
+            rbAns3.TabStop = true;
+            rbAns3.Text = "radioButton3";
+            rbAns3.UseVisualStyleBackColor = true;
+            // 
+            // lbl1
+            // 
+            lbl1.AutoSize = true;
+            lbl1.Location = new Point(59, 56);
+            lbl1.Name = "lbl1";
+            lbl1.Size = new Size(38, 15);
+            lbl1.TabIndex = 3;
+            lbl1.Text = "label1";
+            lbl1.Click += label1_Click;
+            // 
+            // rbAns4
+            // 
+            rbAns4.AutoSize = true;
+            rbAns4.Location = new Point(23, 108);
+            rbAns4.Name = "rbAns4";
+            rbAns4.Size = new Size(94, 19);
+            rbAns4.TabIndex = 4;
+            rbAns4.TabStop = true;
+            rbAns4.Text = "radioButton4";
+            rbAns4.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(rbAns4);
+            groupBox1.Controls.Add(rbAns2);
+            groupBox1.Controls.Add(rbAns1);
+            groupBox1.Controls.Add(rbAns3);
+            groupBox1.Location = new Point(59, 102);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(200, 156);
+            groupBox1.TabIndex = 5;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Svar";
+            // 
+            // NxtBtn
+            // 
+            NxtBtn.Location = new Point(473, 235);
+            NxtBtn.Name = "NxtBtn";
+            NxtBtn.Size = new Size(75, 23);
+            NxtBtn.TabIndex = 6;
+            NxtBtn.Text = "button1";
+            NxtBtn.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button1);
-            Controls.Add(listBox1);
+            ClientSize = new Size(560, 270);
+            Controls.Add(NxtBtn);
+            Controls.Add(groupBox1);
+            Controls.Add(lbl1);
+            Margin = new Padding(2);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private ListBox listBox1;
-        private Button button1;
+        private RadioButton rbAns2;
+        private RadioButton rbAns1;
+        private RadioButton rbAns3;
+        private Label lbl1;
+        private RadioButton rbAns4;
+        private GroupBox groupBox1;
+        private Button NxtBtn;
     }
 }
