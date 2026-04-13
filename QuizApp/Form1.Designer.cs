@@ -35,6 +35,7 @@
             rbAns4 = new RadioButton();
             groupBox1 = new GroupBox();
             NxtBtn = new Button();
+            questlbl = new Label();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -114,11 +115,22 @@
             NxtBtn.Text = "button1";
             NxtBtn.UseVisualStyleBackColor = true;
             // 
+            // questlbl
+            // 
+            questlbl.AutoSize = true;
+            questlbl.Location = new Point(473, 22);
+            questlbl.Name = "questlbl";
+            questlbl.Size = new Size(38, 15);
+            questlbl.TabIndex = 7;
+            questlbl.Text = "label1";
+            questlbl.Click += label1_Click_1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(560, 270);
+            Controls.Add(questlbl);
             Controls.Add(NxtBtn);
             Controls.Add(groupBox1);
             Controls.Add(lbl1);
@@ -141,5 +153,6 @@
         private RadioButton rbAns4;
         private GroupBox groupBox1;
         private Button NxtBtn;
+        private Label questlbl;
     }
 }
